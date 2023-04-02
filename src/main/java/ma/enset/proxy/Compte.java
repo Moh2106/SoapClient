@@ -1,0 +1,71 @@
+
+package ma.enset.proxy;
+
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlType;
+
+
+/**
+ * <p>Classe Java pour compte complex type.
+ * 
+ * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * 
+ * <pre>
+ * &lt;complexType name="compte">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="id" type="{http://www.w3.org/2001/XMLSchema}int"/>
+ *         &lt;element name="montant" type="{http://www.w3.org/2001/XMLSchema}double"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
+ */
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(name = "compte", propOrder = {
+    "id",
+    "montant"
+})
+public class Compte {
+
+    protected int id;
+    protected double montant;
+
+    /**
+     * Obtient la valeur de la propriété id.
+     * 
+     */
+    public int getId() {
+        return id;
+    }
+
+    /**
+     * Définit la valeur de la propriété id.
+     * 
+     */
+    public void setId(int value) {
+        this.id = value;
+    }
+
+    /**
+     * Obtient la valeur de la propriété montant.
+     * 
+     */
+    public double getMontant() {
+        return montant;
+    }
+
+    /**
+     * Définit la valeur de la propriété montant.
+     * 
+     */
+    public void setMontant(double value) {
+        this.montant = value;
+    }
+
+}
